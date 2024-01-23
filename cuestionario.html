@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de Estacionamientos</title>
+
+    <header>
+        <img src="logo.png" alt="Logo" class="logo">
+    </header>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input, select, textarea {
+            margin-bottom: 12px;
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .star-rating {
+            display: flex;
+            align-items: center;
+        }
+        .star-rating input {
+            display: none;
+        }
+        .star-rating label {
+            font-size: 24px;
+            cursor: pointer;
+            color: #ccc; /* Color de estrella no seleccionada */
+            order: 1; /* Establece el orden predeterminado */
+        }
+        .star-rating input:checked + label,
+        .star-rating input:checked ~ label {
+            color: yellow; /* Color de estrella seleccionada y anteriores */
+        }
+        .rating-number {
+            margin-left: 16px;
+            font-weight: bold;
+            font-size: 18px;
+            order: 2; /* Establece el orden para que aparezca después de las estrellas */
+        }
+    </style>
+</head>
+<body>
+
+<form action="#" method="post" id="encuestaForm" onsubmit="return validarFormulario()">
+    <label for="estacionamientos">¿Qué te ha parecido nuestros estacionamientos? (Valoración del 1 al 5)</label>
+    <input type="number" id="estacionamientos" name="estacionamientos" required min="1" max="5">
+
+    <label for="precios">¿Qué te han parecido los precios?</label>
+    <select id="precios" name="precios" required>
+        <option value="baratos">Baratos</option>
+        <option value="normales">Normales</option>
+        <option value="caros">Caros</option>
+        <option value="muy-caros">Muy caros</option>
+        <option value="excesivos">Excesivos</option>
+    </select>
+
+    <label for="formaPago">¿Qué te ha parecido la forma de pago o la reserva de aparcamiento?</label>
+    <textarea id="formaPago" name="formaPago" rows="4" required></textarea>
+
+    <label for="comentarios">Comentarios adicionales</label>
+    <textarea id="comentarios" name="comentarios" rows="4" required></textarea>
+
+    <label>Valóranos del 1 al 5:</label>
+    <div class="star-rating">
+        <input type="radio" id="star1" name="rating" value="1" required><label for="star1">★</label>
+        <input type="radio" id="star2" name="rating" value="2" required><label for="star2">★</label>
+        <input type="radio" id="star3" name="rating" value="3" required><label for="star3">★</label>
+        <input type="radio" id="star4" name="rating" value="4" required><label for="star4">★</label>
+        <input type="radio" id="star5" name="rating" value="5" required><label for="star5">★</label>
+    </div>
+
+    <button type="submit">Enviar</button>
+</form>
+
+<script>
+    // Función para actualizar la valoración y mostrar el número correspondiente
+    function actualizarValoracion(valoracion) {
+        const estrellas = document.querySelectorAll('.star-rating label');
+        const numeroValoracion = document.querySelector('.rating-number');
+
+        for (let i = 0; i < estrellas.length; i++) {
+            if (i < valoracion) {
+                estrellas[i].style.color = 'yellow';
+            } else {
+                estrellas[i].style.color = '#ccc';
+            }
+        }
+
+        numeroValoracion.textContent = `Has seleccionado ${valoracion} estrellas`;
+    }
+
+    // Agregar un evento change al campo de valoración
+    document.getElementById('estacionamientos').addEventListener('input', function () {
+        const valoracion = parseInt(this.value);
+        actualizarValoracion(valoracion);
+    });
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+

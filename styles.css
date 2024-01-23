@@ -1,0 +1,201 @@
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: right;
+    padding: 30px;
+    position: relative;
+}
+
+
+.logo {
+    width: 80px; /* Ajusta el tamaño de tu logo según sea necesario */
+    height: auto;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+.logo2 {
+    width: 80px; /* Ajusta el tamaño de tu logo según sea necesario */
+    height: auto;
+}
+.electricos {
+    width: 65px; /* Ajusta el tamaño de tu logo según sea necesario */
+    height:auto;  
+}
+.reducida {
+    width: 65px; /* Ajusta el tamaño de tu logo según sea necesario */
+    height:auto;   
+}
+.tarjetas{
+    width: 65px; /* Ajusta el tamaño de tu logo según sea necesario */
+    height:auto;   
+}
+.camion {
+    width: 65px; /* Ajusta el tamaño de tu logo según sea necesario */
+    height:auto;   
+}
+.buses {
+    width: 65px; /* Ajusta el tamaño de tu logo según sea necesario */
+    height:auto;   
+}
+.remolque{
+    width: 65px; /* Ajusta el tamaño de tu logo según sea necesario */
+    height:auto;   
+}
+h1 {
+    margin: 0;
+}
+
+nav {
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+section {
+    padding: 20px;
+}
+.inicios{
+    font-family: Arial Black, Arial, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.Inicio {
+    font-family: Arial Black, Arial, sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+.background-text {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1.5em;
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+.background-text strong {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* ... (código existente) */
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.social-links li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.social-links a:hover {
+    color: #333;
+}
+.green-bg{
+    font-family: Arial Black, Arial, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    color: #4CAF50;
+}
+.social-links2 {
+    font-family: Arial Black, Arial, sans-serif;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+.contacto2 {
+    font-family: Arial Black, Arial, sans-serif;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+.formulario2 {
+    font-family: Arial Black, Arial, sans-serif;
+    text-align: center;
+    font-weight: bold;
+} 
+.encuesta1 {
+    font-family: Arial Black, Arial, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    color: #4CAF50;
+}
+.logo2 {
+    width: 100px; /* Ajusta el tamaño de tu logo según sea necesario */
+    height: auto;
+}
+.redes1 {
+    font-family: Arial Black, Arial, sans-serif;
+    text-align: center;
+    font-weight: bold;
+} 
+.logo3 {
+    width: 65px; /* Ajusta el tamaño de tu logo según sea necesario */
+    height:auto;  
+    margin-bottom: 20px;
+}
+/* ... (código anterior) ... */
+
+section#ubicacion {
+    background-color: #f2f2f2;
+}
+
+section#ubicacion address {
+    font-style: normal;
+}
+
+/* Estilo básico para un mapa (puedes ajustarlo según el servicio que elijas) */
+section#ubicacion #mapa {
+    width: 100%;
+    height: 300px;
+    background-color: #ddd;
+    /* Puedes personalizar este fondo gris para que coincida con la estética de tu página */
+}
+
+/* ... (código posterior) ... */
+
+
+/* ... (código existente) */
+
